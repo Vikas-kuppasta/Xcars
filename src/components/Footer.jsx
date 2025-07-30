@@ -7,10 +7,10 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 function Footer() {
     return (
-        <main className='md:mx-4'>
+        <main className='px-4'>
             <div className= 'md:flex items-center justify-between'>
-                <div className='md:w-85  '>
-                    <img className='h-22 w-22' src="/logo5.png" alt=""/>
+                <div className='flex flex-col text-center justify-center items-center md:flex md:justify-start md:items-start md:text-left md:w-85  '>
+                    <img className=' flex justify-self-start h-22 w-22' src="/logo5.png" alt=""/>
                     <p className='mt-4 mb-4  text-gray-200 '>Premium car rental service with a wide selection of luxury and everyday vehicles for all your driving needs.</p>
                     <div className='flex gap-6'>
                         <FaFacebook className='w-6 h-6 text-gray-200' />
@@ -23,7 +23,7 @@ function Footer() {
 
                 </div>
 
-                <div className='md:flex gap-6'>
+                <div className='hidden md:flex md:gap-6'>
                     <div className=' px-4 py-6 text-left text-gray-900'>
                         <h1 className='mb-3 font-bold'>OUICK LINKS</h1>
                         <Link ><h2 className='text-gray-200' >Home</h2></Link>
@@ -55,10 +55,10 @@ function Footer() {
 
                 
 
-            <div className='md:flex items-center justify-between py-2 mt-4 border-t-1 border-t-gray-400 border-solid'>
+            <div className='flex flex-col justify-center items-center md:flex md:items-center md:justify-between py-2 mt-4 border-t-1 border-t-gray-400 border-solid'>
             <h1 className='text-gray-300'>© 2025 Brand. All rights reserved.</h1>
 
-            <ul className='md:flex text-gray-300 gap-6'>
+            <ul className='flex mt-1 md:flex text-gray-300 gap-6'>
                 <li>Privacy</li>
                 <li>|</li>
                 <li>Terms</li>

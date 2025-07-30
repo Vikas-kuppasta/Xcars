@@ -6,9 +6,9 @@ import { FaSearch } from 'react-icons/fa'
 
 function Navbar() {
     return (
-        <main className='  md:flex items-center   justify-between mx-4 '>
+        <main className='  md:flex items-center  justify-between px-4 py-1 '>
             <Link className='' to='/'>
-                <img src="/logo5.png" className='h-16 w-17 2xl:h-18 2xl:w-20 ' alt="" />
+                <img src="/logo5.png" className='h-11 w-11 md:h-16 md:w-17 2xl:h-18 2xl:w-20 ' alt="" />
             </Link>
             
 
