@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 function Banner() {
     return (
-        <main className='bg-white py-5 px-4'>
+        <main className='bg-gradient-to-br from-gray-700 via-gray-300 to-gray-700 py-15 px-4'>
 
         <div className='flex flex-col gap-10 md:flex md:flex-row justify-between  items-center md:gap-40 rounded-xl bg-gradient-to-r from-blue-700 via-blue-400 to-blue-300 px-7 py-7 md:px-12 md:py-12'>
             
