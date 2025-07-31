@@ -12,7 +12,7 @@ function Featuredsection() {
                 <Title title='Featured Vehicles' subtitle='Explore our selection of premium vehicles available for your next adventure.'/>
             </div>
 
-            <div className='grid grid-rows-1 md:grid md:grid-cols-3 gap-y-10 gap-x-5'>
+            <div className='grid grid-rows-1 md:grid md:grid-cols-2 gap-y-10 gap-x-5'>
                 {
                     dummyCarData.slice(0,6).map((car)=>(
                     <div key={car._id}>

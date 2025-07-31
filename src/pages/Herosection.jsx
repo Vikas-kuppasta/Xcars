@@ -6,11 +6,11 @@ import { FaSearch } from "react-icons/fa";
 function Herosection() {
     const [pickupLocation , SetpickupLocation] = useState('');
     return (
-        <main className='flex flex-col mt-5 items-center md:overflow-x-hidden justify-center px-4 gap-10 md:flex  md:flex-col md:h-screen md:items-center md:justify-center md:gap-14 md:px-4'>
+        <main className='flex flex-col mt-5 items-center md: justify-center px-4 gap-10 md:flex  md:flex-col md:h-screen md:items-center md:justify-center md:gap-14 md:px-4'>
             <h1 className='text-white  text-3xl font-extrabold md:text-5xl md:font-medium '>Luxury cars on Rent</h1>
-            <form action="" className='flex flex-col  items-center justify-center gap-8 rounded-md py-10 px-8 md:flex md:flex-row md:justify-between md:items-center  text-white bg-gradient-to-tl from-gray-600 via-gray-500 to-gray-600 outline-1 outline-offset-0 md:py-8 md:px-6 md:rounded-full md:gap-20 '>
+            <form action="" className='flex flex-col  items-center justify-center gap-8 rounded-md py-10 px-8 md:flex md:flex-row md:justify-between md:items-center  text-white bg-gradient-to-tl from-gray-600 via-gray-500 to-gray-600 outline-1 outline-offset-0 md:py-8 md:px-6 md:rounded-full md:gap-15 '>
 
-            <div className=' flex flex-col items-center justify-center gap-4 md:flex md:flex-row md:items-center md:gap-20 '>
+            <div className=' flex flex-col items-center justify-center gap-4 md:flex md:flex-row md:items-center md:gap-10 '>
 
                 <div className='flex flex-col  self-start   md:flex md:flex-col md:items-start md:gap-2'>
                     <select  required value={pickupLocation} className='' onChange={(e)=>SetpickupLocation(e.target.value)}>

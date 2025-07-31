@@ -8,7 +8,7 @@ function Emailsection() {
 
             <form className='flex md:flex  border-1 border-solid border-gray-400 rounded-md'>
                 <input type="email" className='px-1 md:p-2 md:w-150' placeholder='Enter your email id' required />
-                <button className=' text-white rounded-r-md outline-0 px-1 py-1 bg-blue-600'>Subscribe</button>
+                <button className=' text-white  rounded-r-md outline-0 px-1 py-1 md:px-3 bg-blue-600'>Subscribe</button>
             </form>
 
 

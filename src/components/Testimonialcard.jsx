@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 function Testimonialcard({Customersreview}) {
     return (
-        <main className='flex flex-col gap-4 py-13 px-7 rounded-md  shadow-md '>
+        <main className='flex flex-col gap-4 py-13 px-7 rounded-md md:h-75 shadow-md '>
             <div className='flex flex-row gap-7 items-center '>
                 <img className='h-10 rounded-full' src={Customersreview.image} alt="" />
 
