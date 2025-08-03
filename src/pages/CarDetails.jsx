@@ -92,7 +92,7 @@ function CarDetails() {
 
                 {/* right side details */}
 
-                <form className='mt-15 h-max space-y-6  bg-white sticky top-16 px-6 py-4 rounded-lg shadow-xl '>
+                <form className='mt-15 lg:mt-0 h-max space-y-6 top-18 bg-white sticky  px-6 py-4 rounded-lg shadow-xl '>
                     <p className='flex items-center text-2xl font-medium justify-between'>$ {cardetail.pricePerDay} <span className='text-gray-500 text-lg'>per day</span></p>
 
 
