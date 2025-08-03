@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
     return (
-        <main className='flex items-center justify-between  md:flex md:items-center  md:justify-between px-4 py-1 '>
+        <main className='flex items-center  justify-between  md:flex md:items-center  md:justify-between px-4 py-1 '>
             <Link className='' to='/'>
                 <img src="/logo5.png" className='h-13 w-13 md:h-16 md:w-17 2xl:h-18 2xl:w-20 ' alt="" />
             </Link>

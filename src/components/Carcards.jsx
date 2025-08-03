@@ -1,13 +1,15 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 function Carcards({car}) {
+    const navigate = useNavigate()
     return (
-        <main className='rounded-xl overflow-hidden shadow-xl '>
+        <main onClick={()=>{navigate(`/car-details/${car._id}`)}} className='rounded-xl bg-white overflow-hidden shadow-xl '>
             <div className='relative h-50 overflow-hidden'>
                 <img className='object-cover w-full h-full ' src={car.image} alt="" />
                 <p className='bg-blue-600 absolute text-sm top-2 left-2 px-2 py-1 rounded-full text-amber-50'>Available Now</p>
-                <p className='bg-black py-2 px-4 absolute bottom-4 rounded-xl right-4 text-amber-50'>$300/day</p>
+                <p className='bg-black py-2 px-4 absolute bottom-4 rounded-xl right-4 text-amber-50'>${car.pricePerDay}/day</p>
 
             </div>
 
@@ -21,7 +23,7 @@ function Carcards({car}) {
                 <p className='text-black text-sm'>{car.category}:{car.year}</p>
 
                 </div>
-                <div className='grid grid-cols-2 gap-y-4 text-gray-600'>
+                <div className='grid grid-cols-2 gap-y-5 text-gray-600'>
                     <div className='flex items-center gap-2'>
                         <img src={assets.users_icon} className='h-4' alt="" />
                         <p className=''>{car.seating_capacity}</p>
@@ -44,5 +46,6 @@ function Carcards({car}) {
         </main>
     )
 }
+import { useLocation } from 'react-router-dom'
 
 export default Carcards

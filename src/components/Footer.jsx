@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 function Footer() {
     return (
-        <main className='px-3'>
+        <main className='px-3 mt-10 lg:mt-45'>
             <div className= 'md:flex md:items-center md:justify-center lg:flex lg:items-center  lg:justify-between'>
                 <div className='flex flex-col text-center justify-center items-center lg:flex lg:flex-col lg:text-left  '>
                     <img className=' lg:flex lg:justify-start lg:self-start h-22 w-22' src="/logo5.png" alt=""/>

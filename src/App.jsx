@@ -9,6 +9,8 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Car from './pages/Car'
 import Footer from './components/Footer'
+import Carcards from './components/Carcards'
+import CarDetails from './pages/CarDetails'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='' element={<Home/>} />
+      <Route path='/cars' element={<Car/>} />
+      <Route path='/car-details/:id' element={<CarDetails/>}/>
     </Routes>
     <Footer/>
     </>
