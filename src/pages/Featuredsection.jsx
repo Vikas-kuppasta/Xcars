@@ -17,7 +17,7 @@ function Featuredsection() {
                 <Title title='Featured Vehicles' subtitle='Explore our selection of premium vehicles available for your next adventure.'/>
             </div>
 
-            <div  className='grid grid-rows-1 md:grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-5'>
+            <div  className='grid grid-rows-1 md:grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-5 lg:gap-x-10'>
                 {
                     dummyCarData.slice(0,6).map((car)=>(
                     <div key={car._id}>
@@ -26,7 +26,7 @@ function Featuredsection() {
                     ))
                 }
                 </div>
-                <button onClick={() =>{navigate('/cars'); scrollTo(0,0)}} className='text-gray-600 cursor-pointer border-1 border-solid border-gray-500 flex items-center gap-4 px-3 py-2'>
+                <button onClick={() =>{navigate('/cars'); scrollTo(0,0)}} className='text-gray-600 cursor-pointer border-1 border-solid border-gray-500 flex items-center gap-4 px-3 py-2 transition delay-100 duration-300 hover:scale-110'>
                     Explore more cars <img src={assets.arrow_icon} alt="" />
                     </button>
 
