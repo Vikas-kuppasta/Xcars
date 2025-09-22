@@ -99,6 +99,7 @@ export const menuLinks = [
     { name: "Home", path: "/" },
     { name: "Cars", path: "/cars" },
     { name: "My Bookings", path: "/my-bookings" },
+    
 ]
 
 export const ownerMenuLinks = [
@@ -110,7 +111,7 @@ export const ownerMenuLinks = [
 
 export const dummyUserData = {
   "_id": "6847f7cab3d8daecdb517095",
-  "name": "GreatStack",
+  "name": "Aditro",
   "email": "admin@example.com",
   "role": "owner",
   "image": user_profile,
@@ -131,7 +132,7 @@ export const dummyCarData = [
         "pricePerDay": 300,
         "location": "New York",
         "description": "The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made its debut in 1999 as the first SUV ever produced by BMW.",
-        "isAvaliable": true,
+        "isAvaliable": false,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -148,7 +149,7 @@ export const dummyCarData = [
         "pricePerDay": 130,
         "location": "Chicago",
         "description": "The Toyota Corolla is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T08:33:57.993Z",
     },
     {
@@ -165,7 +166,7 @@ export const dummyCarData = [
         "pricePerDay": 200,
         "location": "Los Angeles",
         "description": "The Jeep Wrangler is a mid-size luxury SUV produced by Jeep. The Wrangler made its debut in 2003 as the first SUV ever produced by Jeep.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T08:34:39.592Z",
     },
     {
@@ -182,7 +183,7 @@ export const dummyCarData = [
         "pricePerDay": 209,
         "location": "Houston",
         "description": "This is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-17T06:15:47.318Z",
     },
       {
@@ -199,7 +200,7 @@ export const dummyCarData = [
     pricePerDay: 299,
     location: "San Francisco",
     description: "A compact electric SUV with advanced autopilot and all-wheel drive.",
-    isAvaliable: true,
+    isAvailable: true,
     createdAt: "2025-03-21T10:45:12.210Z",
   },
     {
@@ -216,7 +217,7 @@ export const dummyCarData = [
     pricePerDay: 350,
     location: "New York",
     description: "Luxury midsize SUV with sporty performance and a powerful twin-turbo engine.",
-    isAvaliable: true,
+    isAvailable: true,
     createdAt: "2025-02-15T14:05:23.512Z",
   },
   {
@@ -233,7 +234,7 @@ export const dummyCarData = [
     pricePerDay: 189,
     location: "Chicago",
     description: "A performance-focused hatchback with turbocharged engine and sporty design.",
-    isAvaliable: true,
+    isAvailable: true,
     createdAt: "2025-01-08T09:22:01.101Z",
   },
   {
@@ -250,7 +251,7 @@ export const dummyCarData = [
     pricePerDay: 270,
     location: "Miami",
     description: "Executive sedan with elegant design, top-tier comfort, and diesel efficiency.",
-    isAvaliable: false,
+    isAvailable: false,
     createdAt: "2025-03-03T13:11:37.620Z",
   },
   {
@@ -267,7 +268,7 @@ export const dummyCarData = [
     pricePerDay: 225,
     location: "Los Angeles",
     description: "A high-performance coupe with aggressive styling and a supercharged V8 engine.",
-    isAvaliable: true,
+    isAvailable: true,
     createdAt: "2025-04-01T17:33:14.218Z",
   },
   {
@@ -284,7 +285,7 @@ export const dummyCarData = [
     pricePerDay: 199,
     location: "Seattle",
     description: "Smart and stylish crossover with plenty of features and great fuel economy.",
-    isAvaliable: false,
+    isAvailable: false,
     createdAt: "2025-05-10T08:29:41.005Z",
   }
 ];
@@ -295,8 +296,8 @@ export const dummyMyBookingsData = [
         "car": dummyCarData[0],
         "user": "6847f7cab3d8daecdb517095",
         "owner": "6847f7cab3d8daecdb517095",
-        "pickupDate": "2025-06-13T00:00:00.000Z",
-        "returnDate": "2025-06-14T00:00:00.000Z",
+        "pickupDate": "2025-06-13",
+        "returnDate": "2025-06-14",
         "status": "confirmed",
         "price": 440,
         "createdAt": "2025-06-10T12:57:48.244Z",
@@ -306,8 +307,8 @@ export const dummyMyBookingsData = [
         "car": dummyCarData[1],
         "user": "6847f7cab3d8daecdb517095",
         "owner": "67fe3467ed8a8fe17d0ba6e2",
-        "pickupDate": "2025-06-12T00:00:00.000Z",
-        "returnDate": "2025-06-12T00:00:00.000Z",
+        "returnDate": "2025-06-12",
+        "pickupDate": "2025-06-12",
         "status": "pending",
         "price": 130,
         "createdAt": "2025-06-10T12:57:25.613Z",
@@ -317,8 +318,8 @@ export const dummyMyBookingsData = [
         "car": dummyCarData[2],
         "user": "6847f7cab3d8daecdb517095",
         "owner": "67fe3467ed8a8fe17d0ba6e2",
-        "pickupDate": "2025-06-11T00:00:00.000Z",
-        "returnDate": "2025-06-12T00:00:00.000Z",
+        "pickupDate": "2025-06-11",
+        "returnDate": "2025-06-12",
         "status": "pending",
         "price": 600,
         "createdAt": "2025-06-10T09:55:06.379Z",
@@ -328,8 +329,8 @@ export const dummyMyBookingsData = [
         "car": dummyCarData[3],
         "user": "6847f7cab3d8daecdb517095",
         "owner": "6847f7cab3d8daecdb517095",
-        "pickupDate": "2025-06-11T00:00:00.000Z",
-        "returnDate": "2025-06-12T00:00:00.000Z",
+        "returnDate": "2025-06-12",
+        "pickupDate": "2025-06-11",
         "status": "confirmed",
         "price": 440,
         "createdAt": "2025-06-10T09:44:25.410Z",
