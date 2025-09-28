@@ -1,17 +1,20 @@
 import React from 'react'
-import { assets, menuLinks, ownerMenuLinks } from '../assets/assets'
-import { Link,} from 'react-router-dom'
+import { assets, menuLinks, mobilemenu, ownerMenuLinks } from '../assets/assets'
+import { Link, useLocation,} from 'react-router-dom'
 import { FaSearch } from 'react-icons/fa'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { useState } from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
-    const[open, setopen] = useState(false)
+    const[open, setopen] = useState(false);
+    const location = useLocation();
     return (
-        <main className={`flex items-center  justify-between  md:flex md:items-center  md:justify-between px-4 py-1 `}>
-            <Link className='' to='/'>
+        <main className={` max-md:relative max-md:flex max-md:flex-col   `}>
+<div className='max-md:hidden  md:flex md:items-center  md:justify-between md:px-4 md:py-1'>
+
+            <Link className='ml-1 mt-1' to='/'>
                 <img src="/logo5.png" className='h-13 w-13 md:h-16 md:w-17 2xl:h-18 2xl:w-20 ' alt="" />
             </Link>
             
@@ -39,14 +42,44 @@ function Navbar() {
                 </button>
             </div>
 
+</div>
 
-            <div className='flex gap-7 md:hidden'>
-                <button className='bg-blue-600  outline-1 outline-offset-0 text-sm px-4 text-white rounded-md'>
-                    Signup
+{/* moblie navbar */}
+<div className='md:hidden sticky top-0   px-2 border-b border-white py-1 flex gap-2 justify-between z-10   '> 
 
-                </button>
-            <GiHamburgerMenu className= 'text-gray-800 h-7 w-7 ' />
-            </div>
+<Link>
+<img src='/logo5.png' className='h-13 w-13' alt="" />
+</Link>
+
+<div className='flex items-center gap-5'>
+  <button className='outline-1 rounded-md h-max px-2 py-1 bg-gradient-to-tl from-blue-700 via-blue-500 to-blue-700 text-white'>
+                    Sign Up
+  </button>  
+  <button className=' ' onClick={()=>setopen(!open)}>
+    {open ? <IoClose className='h-8 w-8'/> : <GiHamburgerMenu className='h-8 w-8'/>}
+  </button>
+</div>
+
+</div>
+
+{open && (
+    <div className='absolute fixed z-1 md:hidden h-screen w-full bg-gradient-to-tl from-gray-500 via-gray-300 to-gray-500 py-11'>
+        {mobilemenu.map((moblink,op5)=>(
+                <NavLink to={moblink.path} className={`relative flex items-center gap-2 pl-1 w-full py-3 md:pl-4 first:mt-6 ${moblink.path===location.pathname? 'bg-blue-100':'text-gray-400'}`}>
+                <div  key={op5} className='w-full py-1 pl-2 flex items-center gap-2'>
+                    <img src={moblink.path === location.pathname ? moblink.coloredIcon:moblink.icon}  />
+                    <span className=' text-black'>{moblink.name}</span>
+                    <div className={`${moblink.path === location.pathname && 'bg-blue-500'} w-1.5 h-8 rounded-l right-0 absolute`}></div>
+                </div>
+                </NavLink>            
+
+
+            
+        ))}
+    </div>
+)}
+
+
 
 
 

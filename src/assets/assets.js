@@ -94,11 +94,17 @@ export const assets = {
     car_image3,
     car_image4
 }
+export const mobilemenu = [
+  { name: "Home", path:'/'},
+  { name: "Cars", path:'/cars'},
+  { name: "Dashboard", path:'/owner' , },
+  { name: "My Bookings", path:'/my-bookings'},
+]
 
 export const menuLinks = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/" , },
     { name: "Cars", path: "/cars" },
-    { name: "My Bookings", path: "/my-bookings" },
+    { name: "My Bookings", path: "/my-bookings"  },
     
 ]
 

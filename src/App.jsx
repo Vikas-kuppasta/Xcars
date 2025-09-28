@@ -17,6 +17,7 @@ import Dashboard from './pages/Dashboard'
 import Managecars from './pages/Managecars'
 import Managebookings from './pages/managebookings'
 import Addcar from './pages/Addcar'
+import Carlayout from './pages/Carlayout'
 
 
 function App() {
@@ -34,11 +35,13 @@ const isOwnerpath = useLocation().pathname.startsWith('/owner')
       <Route path='/my-bookings' element={<Mybookingdata/>}/>
 
       <Route path='/owner' element={<Layout/>}>
-      <Route path='/owner' element={<Dashboard/>}/>
+      <Route index element={<Dashboard/>}/>
       <Route path='add-car'element={<Addcar/>}/>
       <Route path='manage-cars'element={<Managecars/>}/>
       <Route path='manage-bookings'element={<Managebookings/>}/>
       </Route>
+
+      
 
     </Routes>
     {!isOwnerpath &&<Footer/>}

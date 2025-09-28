@@ -6,8 +6,8 @@ function Carcards({car}) {
     const navigate = useNavigate()
     return (
         <main onClick={()=>{navigate(`/car-details/${car._id}`); scrollTo(0,0)}} className='rounded-xl bg-white overflow-hidden shadow-xl transition delay-100 duration-300 hover:scale-110 cursor-pointer'>
-            <div className='relative h-50 overflow-hidden'>
-                <img className='object-cover w-full h-full ' src={car.image} alt="" />
+            <div className=' relative h-50 overflow-hidden'>
+                <img className=' object-cover w-full h-full ' src={car.image} alt="" />
                 <p className='bg-blue-600 absolute text-sm top-2 left-2 px-2 py-1 rounded-full text-amber-50'>Available Now</p>
                 <p className='bg-black py-2 px-4 absolute bottom-4 rounded-xl right-4 text-amber-50'>${car.pricePerDay}/day</p>
 

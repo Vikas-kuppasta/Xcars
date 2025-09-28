@@ -19,7 +19,7 @@ function Addcar() {
     })
 
     return (
-        <main className='py-4 px-4 md:py-10 md:px-10  '>
+        <main className='py-4 px-4 md:py-10 md:px-10 h-full '>
             <div className='text-left flex flex-col gap-3 w-full '>
                 <h1 className='text-black text-3xl md:text-4xl font-semibold'>Add New Car</h1>
                 <p className='text-gray-400  text-sm md:text-lg '>Fill in details to list a new car for booking, including pricing, availability, and car specifications.</p>

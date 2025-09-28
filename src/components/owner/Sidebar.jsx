@@ -26,7 +26,7 @@ function Sidebar() {
             {image && (
                 <button className='absolute top-0  right-0 flex p-2 gap-1 bg-red-200 cursor-pointer'  onChange={updateimage}>Save{assets.check_icon}</button>
             )}
-            <p className='max-md:text-sm'>Adiro</p>
+            <p className='max-md:text-sm'>Aditro</p>
 
         <div className='w-full'>
             {ownerMenuLinks.map((linkss, op) => (
