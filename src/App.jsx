@@ -17,7 +17,7 @@ import Dashboard from './pages/Dashboard'
 import Managecars from './pages/Managecars'
 import Managebookings from './pages/managebookings'
 import Addcar from './pages/Addcar'
-import Carlayout from './pages/Carlayout'
+
 
 
 function App() {
