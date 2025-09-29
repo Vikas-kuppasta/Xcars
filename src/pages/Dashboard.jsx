@@ -28,7 +28,7 @@ function Dashboard() {
     return (
         
 
-        <main className='h-max px-4 py-5 md:py-10 md:px-10 md:h-screen w-full'>
+        <main className='h-full px-4 py-5 md:py-10 md:px-10 md:h-screen w-full'>
             <div className='text-left flex flex-col gap-3 md:w-full '>
                 <h1 className='text-black text-3xl md:text-4xl font-semibold'>Admin Dashboard</h1>
                 <p className='text-gray-400  text-sm md:text-lg '>Monitor overall platform performance including total cars, bookings, revenue, and recent activities</p>
@@ -46,7 +46,7 @@ function Dashboard() {
                 ))}
             </div>
 
-            <div className='flex flex-2'>
+            <div className='max-md:flex-col flex gap-2'>
                 {/* recent bookings  */}
                 <div className='border-solid border-2 border-gray-200 rounded-md p-4 md:w-md'>
                     <div className='flex flex-col gap-1'>
@@ -72,7 +72,12 @@ function Dashboard() {
                     </div>
                 </div>
                 {/* monthly revenue  */}
-                
+                <div className='border-solid border-2 border-gray-200 rounded-md p-4 md:w-md'>
+                    <div className='flex flex-col gap-1'>
+                        <h1 className='text-2xl font-medium'>Monthly Revenue</h1>
+                        <p className='text-md'>Revenue for current month</p>
+                    </div>                        
+                </div>
             </div>
 
 
