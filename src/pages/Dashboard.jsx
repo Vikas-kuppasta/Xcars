@@ -28,7 +28,7 @@ function Dashboard() {
     return (
         
 
-        <main className='h-full px-4 py-5 md:py-10 md:px-10 md:h-screen w-full'>
+        <main className='h-max px-4 py-5 md:py-10 md:px-10 md:h-screen w-full'>
             <div className='text-left flex flex-col gap-3 md:w-full '>
                 <h1 className='text-black text-3xl md:text-4xl font-semibold'>Admin Dashboard</h1>
                 <p className='text-gray-400  text-sm md:text-lg '>Monitor overall platform performance including total cars, bookings, revenue, and recent activities</p>
@@ -72,9 +72,7 @@ function Dashboard() {
                     </div>
                 </div>
                 {/* monthly revenue  */}
-                <div>
-
-                </div>
+                
             </div>
 
 
