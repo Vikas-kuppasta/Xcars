@@ -12,7 +12,7 @@ function Sidebar() {
         setimage('')
     }
     return (
-        <div className='min-w-13 h-full md:min-w-60 relative pt-8  flex flex-col items-center  '>
+        <div className='min-w-13 h-full md:min-w-60 relative pt-8 border-solid border-r-1 border-r-gray-400 flex flex-col items-center  '>
             <div className='group relative '>
                 <label htmlFor="image">
                     <img className='w-8 h-8 md:w-14 md:h-14 rounded-full' src={image ? URL.createObjectURL(image) : user?.image || "https://randomuser.me/api/portraits/men/55.jpg" } alt="" />
