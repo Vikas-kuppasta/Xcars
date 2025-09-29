@@ -23,7 +23,7 @@ function Mybookingdata() {
 
             <div>
             {bookings.map((booking ,index)=>(
-                <div key={booking.id} className='grid bg-white grid-cols-4 gap-5 shadow-black rounded-md p-2 shadow-md mt-3'>
+                <div key={booking.id} className='grid max-md:grid-cols-1  bg-white grid-cols-4 gap-5 shadow-black rounded-md p-2 shadow-md mt-3'>
                     <div className='p-1 '>
                         <img className='w-full object-cover h-48 rounded-md' src={booking.car.image} alt="" />
                         <span className='text-2xl font-medium '>{booking.car.brand}</span>

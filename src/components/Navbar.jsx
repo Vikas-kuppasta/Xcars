@@ -20,8 +20,8 @@ function Navbar() {
             
 
             <div className='hidden md:text-sm md:flex text-white md:gap-6 lg:flex lg:gap-9 xl:gap-15 lg:text-lg xl:text-lg 2xl:text-xl'>
-                {menuLinks.map((link , index) => (
-                    <Link className='' key={index} to={link.path}>
+                {menuLinks.map((link , op8) => (
+                    <Link className='' key={op8} to={link.path}>
                     {link.name}
                     </Link>
                 ))}
@@ -63,9 +63,11 @@ function Navbar() {
 </div>
 
 {open && (
-    <div className='absolute fixed z-1 md:hidden h-screen w-full bg-gradient-to-tl from-gray-500 via-gray-300 to-gray-500 py-11'>
+     
+
+    <div className='fixed  z-1 md:hidden h-screen w-full bg-gradient-to-tl from-gray-500 via-gray-300 to-gray-500 py-11'>
         {mobilemenu.map((moblink,op5)=>(
-                <NavLink to={moblink.path} className={`relative flex items-center gap-2 pl-1 w-full py-3 md:pl-4 first:mt-6 ${moblink.path===location.pathname? 'bg-blue-100':'text-gray-400'}`}>
+            <NavLink to={moblink.path} className={`relative flex items-center gap-2 pl-1 w-full py-3 md:pl-4 first:mt-6 ${moblink.path===location.pathname? 'bg-blue-100':'text-gray-400'}`}>
                 <div  key={op5} className='w-full py-1 pl-2 flex items-center gap-2'>
                     <img src={moblink.path === location.pathname ? moblink.coloredIcon:moblink.icon}  />
                     <span className=' text-black'>{moblink.name}</span>
@@ -75,8 +77,9 @@ function Navbar() {
 
 
             
-        ))}
+))}
     </div>
+
 )}
 
 

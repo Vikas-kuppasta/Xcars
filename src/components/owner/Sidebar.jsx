@@ -29,9 +29,9 @@ function Sidebar() {
             <p className='max-md:text-sm'>Aditro</p>
 
         <div className='w-full'>
-            {ownerMenuLinks.map((linkss, op) => (
-                <NavLink to={linkss.path} className={`relative flex items-center gap-2 pl-1 w-full py-3 md:pl-4 first:mt-6 ${linkss.path===location.pathname? 'bg-blue-100':'text-gray-400'}`}>
-                <div  key={op} className='w-full py-1 pl-2 flex items-center gap-2'>
+            {ownerMenuLinks.map((linkss, op6) => (
+                <NavLink key={op6} to={linkss.path} className={`relative flex items-center gap-2 pl-1 w-full py-3 md:pl-4 first:mt-6 ${linkss.path===location.pathname? 'bg-blue-100':'text-gray-400'}`}>
+                <div  className='w-full py-1 pl-2 flex items-center gap-2'>
                     <img src={linkss.path === location.pathname ? linkss.coloredIcon:linkss.icon} alt={linkss.name} />
                     <span className='max-md:hidden'>{linkss.name}</span>
                     <div className={`${linkss.path === location.pathname && 'bg-blue-500'} w-1.5 h-8 rounded-l right-0 absolute`}></div>

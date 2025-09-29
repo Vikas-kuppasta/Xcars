@@ -139,7 +139,7 @@ export const dummyCarData = [
         "location": "New York",
         "description": "The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made its debut in 1999 as the first SUV ever produced by BMW.",
         "isAvaliable": false,
-        "createdAt": "2025-04-16T07:26:56.215Z",
+        "createdAt": "2025-04-16 07:26:56",
     },
     {
         "_id": "67ff6b758f1b3684286a2a65",
@@ -156,7 +156,7 @@ export const dummyCarData = [
         "location": "Chicago",
         "description": "The Toyota Corolla is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
         "isAvailable": true,
-        "createdAt": "2025-04-16T08:33:57.993Z",
+        "createdAt": "2025-04-16 08:33:57",
     },
     {
         "_id": "67ff6b9f8f1b3684286a2a68",
@@ -173,7 +173,7 @@ export const dummyCarData = [
         "location": "Los Angeles",
         "description": "The Jeep Wrangler is a mid-size luxury SUV produced by Jeep. The Wrangler made its debut in 2003 as the first SUV ever produced by Jeep.",
         "isAvailable": true,
-        "createdAt": "2025-04-16T08:34:39.592Z",
+        "createdAt": "2025-04-16 8:34:39",
     },
     {
         "_id": "68009c93a3f5fc6338ea7e34",
@@ -190,7 +190,7 @@ export const dummyCarData = [
         "location": "Houston",
         "description": "This is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
         "isAvailable": true,
-        "createdAt": "2025-04-17T06:15:47.318Z",
+        "createdAt": "2025-04-17 6:15:47",
     },
       {
     _id: "68009c93a3f5fc6338ea7e35",
@@ -207,7 +207,7 @@ export const dummyCarData = [
     location: "San Francisco",
     description: "A compact electric SUV with advanced autopilot and all-wheel drive.",
     isAvailable: true,
-    createdAt: "2025-03-21T10:45:12.210Z",
+    createdAt: "2025-03-21 10:45:12",
   },
     {
     _id: "68009c93a3f5fc6338ea7e36",
@@ -224,7 +224,7 @@ export const dummyCarData = [
     location: "New York",
     description: "Luxury midsize SUV with sporty performance and a powerful twin-turbo engine.",
     isAvailable: true,
-    createdAt: "2025-02-15T14:05:23.512Z",
+    createdAt: "2025-02-15 14:05:23",
   },
   {
     _id: "68009c93a3f5fc6338ea7e37",
@@ -241,7 +241,7 @@ export const dummyCarData = [
     location: "Chicago",
     description: "A performance-focused hatchback with turbocharged engine and sporty design.",
     isAvailable: true,
-    createdAt: "2025-01-08T09:22:01.101Z",
+    createdAt: "2025-01-08 09:22:01",
   },
   {
     _id: "68009c93a3f5fc6338ea7e38",
@@ -258,7 +258,7 @@ export const dummyCarData = [
     location: "Miami",
     description: "Executive sedan with elegant design, top-tier comfort, and diesel efficiency.",
     isAvailable: false,
-    createdAt: "2025-03-03T13:11:37.620Z",
+    createdAt: "2025-03-03 13:11:37",
   },
   {
     _id: "68009c93a3f5fc6338ea7e39",
@@ -275,7 +275,7 @@ export const dummyCarData = [
     location: "Los Angeles",
     description: "A high-performance coupe with aggressive styling and a supercharged V8 engine.",
     isAvailable: true,
-    createdAt: "2025-04-01T17:33:14.218Z",
+    createdAt: "2025-04-01 7:33:14",
   },
   {
     _id: "68009c93a3f5fc6338ea7e40",
@@ -292,7 +292,7 @@ export const dummyCarData = [
     location: "Seattle",
     description: "Smart and stylish crossover with plenty of features and great fuel economy.",
     isAvailable: false,
-    createdAt: "2025-05-10T08:29:41.005Z",
+    createdAt: "2025-05-10 8:29:14",
   }
 ];
 
