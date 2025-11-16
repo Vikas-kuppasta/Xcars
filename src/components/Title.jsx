@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Title({title, subtitle ,align}) {
+function Title({title, subtitle ,}) {
     return (
         <main className='text-center flex flex-col gap-3 '>
             <h1 className='text-black text-3xl md:text-5xl font-semibold'>{title}</h1>

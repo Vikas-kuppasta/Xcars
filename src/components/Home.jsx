@@ -13,6 +13,9 @@ function Home() {
             <Banner/>
             <Testimonialpage/>
             <Emailsection/>
+        {/* {Loggedin && (
+            <div className='absolute top-0 left-0 w-full h-full bg-black/50'></div>
+        )} */}
 
         </main>
         

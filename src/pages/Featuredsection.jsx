@@ -2,8 +2,6 @@ import React from 'react'
 import Carcards from '../components/Carcards'
 import Title from '../components/Title'
 import { assets, dummyCarData } from '../assets/assets'
-import Banner from './Banner'
-import Testimonialcard from '../components/Testimonialcard'
 import { useNavigate } from 'react-router-dom'
 
 function Featuredsection() {

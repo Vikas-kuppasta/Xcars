@@ -17,19 +17,24 @@ import Dashboard from './pages/Dashboard'
 import Managecars from './pages/Managecars'
 import Managebookings from './pages/managebookings'
 import Addcar from './pages/Addcar'
+import Login from './components/Login'
 
 
 
 function App() {
   
 const isOwnerpath = useLocation().pathname.startsWith('/owner')
-
+const[Loggedin, setLoggedin] = useState(false);
 
   return (
     <>
-    {!isOwnerpath &&<Navbar/>}
+    {Loggedin && (
+      <Login Loggedin={Loggedin} setLoggedin={setLoggedin} />
+    )}
+    {!isOwnerpath &&<Navbar Loggedin={Loggedin} setLoggedin={setLoggedin} />}
+
     <Routes>
-      <Route path='' element={<Home/>} />
+      <Route path='' element={<Home  />} />
       <Route path='/cars' element={<Car/>} />
       <Route path='/car-details/:id' element={<CarDetails/>}/>
       <Route path='/my-bookings' element={<Mybookingdata/>}/>

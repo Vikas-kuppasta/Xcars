@@ -16,7 +16,7 @@ function Sidebar() {
             <div className='group relative '>
                 <label htmlFor="image">
                     <img className='w-8 h-8 md:w-14 md:h-14 rounded-full' src={image ? URL.createObjectURL(image) : user?.image || "https://randomuser.me/api/portraits/men/55.jpg" } alt="" />
-                    <input type='file' id='image' accept='image/*  'hidden onChange={()=>setimage(e.target.files[0])} />
+                    <input type='file' id='image' accept='image/*  'hidden onChange={(e)=>setimage(e.target.files[0])} />
                     <div className='h-14 w-14 absolute hidden top-0 right-0 left-0 bottom-0
                     bg-gray-200 rounded-full group-hover:flex items-center justify-center cursor-pointer'>
                         <img src={assets.edit_icon} alt="" />

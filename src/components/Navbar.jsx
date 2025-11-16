@@ -7,8 +7,9 @@ import { IoClose } from "react-icons/io5";
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({setLoggedin , Loggedin}) {
     const[open, setopen] = useState(false);
+
     const location = useLocation();
     return (
         <main className={` max-md:relative max-md:flex max-md:flex-col   `}>
@@ -37,7 +38,7 @@ function Navbar() {
                 <Link className='text-white lg:text-lg 2xl:text-xl flex items-center' to='/owner'>
                     Dashboard
                 </Link>
-                <button className='bg-gradient-to-tl from-blue-700 via-blue-500 to-blue-700 outline-1 outline-offset-0 md:px-3 md:text-sm text-white rounded-md xl:px-4 lg:text-lg 2xl:px-4 py-1 text-xl'>
+                <button onClick={()=>setLoggedin(!Loggedin)} className='bg-gradient-to-tl from-blue-700 via-blue-500 to-blue-700 outline-1 outline-offset-0 md:px-3 md:text-sm text-white rounded-md xl:px-4 lg:text-lg 2xl:px-4 py-1 text-xl cursor-pointer'>
                     Sign Up
                 </button>
             </div>
@@ -52,7 +53,7 @@ function Navbar() {
 </Link>
 
 <div className='flex items-center gap-5'>
-  <button className='outline-1 rounded-md h-max px-2 py-1 bg-gradient-to-tl from-blue-700 via-blue-500 to-blue-700 text-white'>
+  <button onClick={()=>setLoggedin(!Loggedin)} className='outline-1 rounded-md h-max px-2 py-1 bg-gradient-to-tl from-blue-700 via-blue-500 to-blue-700 text-white'>
                     Sign Up
   </button>  
   <button className=' ' onClick={()=>setopen(!open)}>
@@ -82,7 +83,7 @@ function Navbar() {
 
 )}
 
-
+ 
 
 
 
